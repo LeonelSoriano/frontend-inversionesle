@@ -1,0 +1,20 @@
+.force-to-bottom {
+/*    position:absolute;
+    bottom: 5%;
+    width: 82%;
+    */
+}
+
+.principalContainer {position:relative;}
+.container-down {
+    width:100%;
+    position:relative;
+}
+
+.container-upper{
+height: 100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.08);
+    position:absolute;
+    top:0;
+}

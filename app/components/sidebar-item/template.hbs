@@ -1,0 +1,33 @@
+{{#unless this.args.isCollapsed}}
+  <li class="nav-item  active ">
+    <a class="nav-link d-flex" href={{this.args.ref}}>
+      <span>
+          <span class="sidebar-icon"><span class="fas fa-{{this.args.icon}}">
+          </span></span>
+          <span class="sidebar-text">{{this.args.title}}</span>
+      </span>
+
+    </a>
+  </li>
+{{/unless}}
+
+{{#if this.args.isCollapsed}}
+<li class="nav-item">
+  <span
+    class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+    data-bs-toggle="collapse" data-bs-target="#{{this.args.title}}-submenu-app">
+    <span>
+      <span class="sidebar-icon"><span class="fas fa-{{this.args.icon}}"></span></span>
+      <span class="sidebar-text">{{this.args.title}}</span>
+    </span>
+    <span class="link-arrow"><span class="fas fa-chevron-right"></span></span>
+  </span>
+  <div class="multi-level collapse "
+    role="list" id="{{this.args.title}}-submenu-app" aria-expanded="false">
+    <ul class="flex-column nav">
+      {{yield}}
+    </ul>
+  </div>
+</li>
+
+{{/if}}

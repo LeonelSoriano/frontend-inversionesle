@@ -1,0 +1,21 @@
+{
+  "name": "frontend-inversionesle",
+  "description": "Small description for frontend-inversionesle goes here",
+  "main": "",
+  "authors": [
+    "leonelsoriano <leonelsoriano3@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "^5.15.3",
+    "notyf": "^3.9.0"
+  }
+}
